@@ -3,4 +3,4 @@ services:
     name: product
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn product.app:app
+    startCommand: gunicorn --chdir product app:app
