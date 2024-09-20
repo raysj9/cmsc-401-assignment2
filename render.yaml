@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: product
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn product.app:app
