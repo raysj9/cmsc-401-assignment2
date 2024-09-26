@@ -1,8 +1,6 @@
 from flask import Flask, jsonify, request
 app = Flask(__name__)
 
-# Sample Data
-
 products = [
     {"id": 1, "title": "Apple", "price": 2, "stock": 22},
     {"id": 2, "title": "Eggs", "price": 4, "stock": 63},

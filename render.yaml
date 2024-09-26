@@ -4,3 +4,9 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn --chdir product app:app
+    
+  - type: web
+    name: cart
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --chdir cart app:app
